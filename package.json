@@ -1,0 +1,50 @@
+{
+  "name": "crawler-scheduler-js-sdk",
+  "version": "1.0.2",
+  "description": "爬虫任务调度器的JsSDK",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dist": "tsc",
+    "test": "yarn dist && jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiamondYuan/crawler-scheduler-js-sdk.git"
+  },
+  "author": "DiamondYuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiamondYuan/crawler-scheduler-js-sdk/issues"
+  },
+  "homepage": "https://github.com/DiamondYuan/crawler-scheduler-js-sdk#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "@types/mysql": "^2.15.5",
+    "@types/node": "^10.5.2",
+    "@types/request-promise-native": "^1.0.15",
+    "jest": "^23.4.1",
+    "typescript": "^2.9.2",
+    "ts-jest": "^23.0.1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "request-promise-native": "^1.0.5"
+  }
+}
